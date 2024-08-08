@@ -1,11 +1,10 @@
 // src/components/HeroSection.tsx
 import Image from "next/image";
-import heroImage from "@/assets/66811827-9643273-1.svg";
 
 const HeroSection = () => {
   return (
     <section className="container mx-auto text-center py-20">
-      <Image src={heroImage} alt="Hero Image" width={500} height={500} />
+      <Image src={"/"} alt="Hero Image" width={500} height={500} />
       <h1 className="text-5xl font-bold text-orange-600 mt-10">About Us</h1>
       <p className="mt-6 text-lg text-gray-700">
         Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate

@@ -1,13 +1,12 @@
 // src/components/Footer.tsx
 import Image from "next/image";
-import footerLogo from "@/assets/logo-2.svg";
 import { t } from "@/utils/translation";
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-white to-purple-800 py-10 mt-20">
       <div className="container mx-auto flex justify-between items-center">
-        <Image src={footerLogo} alt="Footer Logo" width={193} height={206} />
+        <Image src={"/"} alt="Footer Logo" width={193} height={206} />
         <nav className="flex gap-10 text-orange-600">
           <a href="#">{t("footer.about")}</a>
           <a href="#"> {t("footer.features")} </a>

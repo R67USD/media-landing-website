@@ -1,12 +1,7 @@
 // src/components/ContactForm.tsx
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import Image from "next/image";
-
-import vector51 from "@/assets/vector-51.svg";
-import vector53 from "@/assets/vector-53.svg";
-import vector54 from "@/assets/vector-54.svg";
 
 const ContactForm = () => {
   const validationSchema = Yup.object().shape({
