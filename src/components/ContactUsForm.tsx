@@ -1,6 +1,6 @@
-// src/components/ContactForm.tsx
+"use client";
 import React from "react";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const ContactForm = () => {
@@ -26,7 +26,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto py-20">
+    <div className="mx-auto py-20">
       <h1 className="text-6xl font-bold text-orange-600 mb-10">
         Have a project!
         <br />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="container mx-auto text-center py-20">
+    <section className="mx-auto text-center py-20">
       <Image src={"/"} alt="Hero Image" width={500} height={500} />
       <h1 className="text-5xl font-bold text-orange-600 mt-10">About Us</h1>
       <p className="mt-6 text-lg text-gray-700">

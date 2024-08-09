@@ -1,13 +1,22 @@
 // src/components/Footer.tsx
 import Image from "next/image";
 import { t } from "@/utils/translation";
+import { routesConfig } from "@/utils/config";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-white to-purple-800 py-10 mt-20">
-      <div className="container mx-auto flex justify-between items-center">
-        <Image src={"/"} alt="Footer Logo" width={193} height={206} />
-        <nav className="flex gap-10 text-orange-600">
+    <footer className="container py-10 w-full">
+      <div className="mx-auto flex justify-between items-center">
+        <Link href={routesConfig.home}>
+          <Image
+            src={"/images/logo.svg"}
+            alt="Footer Logo"
+            width={193}
+            height={206}
+          />
+        </Link>
+        <nav className="max-lg:hidden flex gap-10 text-orange-600">
           <a href="#">{t("footer.about")}</a>
           <a href="#"> {t("footer.features")} </a>
           <a href="#"> {t("footer.pricing")} </a>

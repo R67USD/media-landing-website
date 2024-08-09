@@ -1,3 +1,4 @@
+import MainLayout from "@/layouts/MainLayout";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen flex flex-col ${inter.className}`}
+        className={` ${inter.className}`}
         style={{
-          background: "linear-gradient(to bottom, #FFFFFF 0%, #5420A4 100%)",
+          background: "white",
         }}
       >
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );

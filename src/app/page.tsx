@@ -1,5 +1,14 @@
-export default function Home() {
+import HomeCarousal from "./_components/HomeCarousal";
+import HomeHeroSection from "./_components/HomeHeroSection";
+import HomeMainSection from "./_components/HomeMainSection";
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main>
+      <HomeHeroSection />
+      <hr className="w-full border-gray-600 mt-8 mb-8 my-24" />
+      <HomeMainSection />
+      <HomeCarousal />
+    </main>
   );
 }

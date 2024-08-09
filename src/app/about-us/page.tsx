@@ -1,15 +1,7 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
+import AboutUsMainSection from "./_components/AboutUsMainSection";
 
 const AboutUsPage = () => {
-  return (
-    <div>
-      <Header />
-      <HeroSection />
-      <Footer />
-    </div>
-  );
+  return <AboutUsMainSection />;
 };
 
 export default AboutUsPage;

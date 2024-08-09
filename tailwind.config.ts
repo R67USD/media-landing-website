@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "purple-primary": "#5420A4",
+        "primary-orange": "#FF4900",
+      },
+      lineHeight: {
+        hero: "48.41px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
