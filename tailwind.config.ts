@@ -11,9 +11,13 @@ const config: Config = {
       colors: {
         "purple-primary": "#5420A4",
         "primary-orange": "#FF4900",
+        "custom-gray": "#BBBBBB",
+        "text-gray": "#6D6868",
       },
       lineHeight: {
         hero: "48.41px",
+        about: "42.36px",
+        services: "29.3px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

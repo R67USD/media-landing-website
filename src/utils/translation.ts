@@ -37,6 +37,10 @@ const translation = {
       approach to content creation and engagement, we empower businesses to
       amplify their voice and reach new heights in the digital landscape`,
   },
+  services: {
+    title: "Services",
+    description: "",
+  },
 };
 
 export const t = (key: string) => {

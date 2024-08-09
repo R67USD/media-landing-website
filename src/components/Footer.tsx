@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="container py-10 w-full">
+    <footer className="container py-2 w-full">
       <div className="mx-auto flex justify-between items-center">
         <Link href={routesConfig.home}>
           <Image
