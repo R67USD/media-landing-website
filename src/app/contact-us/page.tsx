@@ -1,5 +1,10 @@
 import ContactForm from "@/components/ContactUsForm";
-import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Media Solutions Pvt. Ltd.",
+  description: "Contact Us by Media Solutions Pvt. Ltd. Company",
+};
 
 const ContactUsPage = () => {
   return <ContactForm />;
