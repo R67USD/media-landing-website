@@ -1,10 +1,12 @@
-// src/components/Footer.tsx
+"use client";
 import Image from "next/image";
 import { t } from "@/utils/translation";
 import { routesConfig } from "@/utils/config";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer className="container py-2 w-full">
       <div className="mx-auto flex justify-between items-center">
@@ -24,7 +26,10 @@ const Footer = () => {
           <a href="#"> {t("footer.team")} </a>
         </nav>
         <p className="text-purple-800 text-2xl">{t("footer.letsDoIt")}</p>
-        <button className="bg-orange-600 text-white py-2 px-6 rounded-md">
+        <button
+          onClick={() => router.push(routesConfig.contactUs)}
+          className="bg-orange-600 text-white py-2 px-6 rounded-md"
+        >
           {t("nav.contact")}
         </button>
       </div>

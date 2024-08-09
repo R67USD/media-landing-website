@@ -11,6 +11,7 @@ const Header = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [activeLink, setActiveLink] = useState<string>(pathname);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setActiveLink(pathname);
@@ -34,7 +35,10 @@ const Header = () => {
         </Link>
       </span>
 
-      <div className="sm:hidden cursor-pointer">
+      <div
+        className="sm:hidden cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <Image src={"/images/ham-icon.svg"} alt="Logo" width={34} height={17} />
       </div>
       <nav className="max-sm:hidden flex gap-8 text-white text-sm">
@@ -53,6 +57,44 @@ const Header = () => {
           );
         })}
       </nav>
+
+      <div
+        className={`sm:hidden fixed px-12 flex flex-col w-full inset-0 top-0  md:w-full h-full md:max-h-[748px] z-[5]  ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        } transition ease-in-out duration-300 bg-custom-overlay backdrop-filter backdrop-blur-md`}
+      >
+        <div
+          onClick={() => setIsOpen(false)}
+          className="flex cursor-pointer justify-end ml-4 items-end mt-14"
+        >
+          <Image
+            src={"/images/cross-icon.svg"}
+            alt="Logo"
+            width={16.97}
+            height={16.26}
+          />
+        </div>
+        <h2 className="text-primary-orange text-[40px] leading-[48px]">Home</h2>
+        <nav className="mt-4 flex flex-col gap-8 text-white text-sm">
+          {NavLinks.slice(1).map((link) => {
+            return (
+              <Link href={link.path} key={link.name}>
+                <span
+                  className={`relative text-lg ${
+                    activeLink === link.path ? "active" : ""
+                  }`}
+                  onClick={() => {
+                    setActiveLink(link.path);
+                    setIsOpen(false);
+                  }}
+                >
+                  {link.name}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
 
       <style jsx>{`
         .active::after {

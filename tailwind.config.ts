@@ -13,6 +13,7 @@ const config: Config = {
         "primary-orange": "#FF4900",
         "custom-gray": "#BBBBBB",
         "text-gray": "#6D6868",
+        "custom-overlay": "rgba(84, 32, 164, 0.59)",
       },
       lineHeight: {
         hero: "48.41px",
