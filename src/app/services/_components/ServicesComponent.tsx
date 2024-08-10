@@ -116,13 +116,13 @@ const ServicesComponent: React.FC = () => {
 
           <div className="w-full flex items-center justify-center py-24">
             <div className=" items-center flex gap-8 text-custom-gray">
-              <span className="leading-about text-[35px] font-semibold">
+              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
                 Youtube
               </span>
-              <span className="leading-about text-[35px] font-semibold">
+              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
                 Facebook
               </span>
-              <span className="leading-about text-[35px] font-semibold">
+              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
                 Instagram
               </span>
             </div>

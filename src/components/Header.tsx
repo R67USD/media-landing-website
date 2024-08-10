@@ -1,15 +1,14 @@
 "use client";
 import { routesConfig } from "@/utils/config";
+import { NavLinks } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
-import { t } from "@/utils/translation";
-import { NavLinks } from "@/utils/constants";
+import { useEffect, useState } from "react";
 
 const Header = () => {
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
   const [activeLink, setActiveLink] = useState<string>(pathname);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,6 +57,7 @@ const Header = () => {
         })}
       </nav>
 
+      {/* Mobile Menu */}
       <div
         className={`sm:hidden fixed px-12 flex flex-col w-full inset-0 top-0  md:w-full h-full md:max-h-[748px] z-[5]  ${
           isOpen ? "translate-y-0" : "-translate-y-full"
@@ -74,7 +74,14 @@ const Header = () => {
             height={16.26}
           />
         </div>
-        <h2 className="text-primary-orange text-[40px] leading-[48px]">Home</h2>
+        <h2
+          onClick={() => {
+            router.push(routesConfig.home);
+          }}
+          className="text-primary-orange text-[40px] leading-[48px]"
+        >
+          Home
+        </h2>
         <nav className="mt-4 flex flex-col gap-8 text-white text-sm">
           {NavLinks.slice(1).map((link) => {
             return (

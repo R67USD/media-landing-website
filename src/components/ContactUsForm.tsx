@@ -32,13 +32,13 @@ const ContactForm = () => {
 
   return (
     <div className="container mx-auto py-20">
-      <h2 className="text-[45px] text-center font-normal text-black leading-[50px] mb-16">
+      <h2 className="max-lg:text-3xl text-[45px] text-center font-normal text-black leading-[50px] mb-16">
         Let's Bring Your Vision to Life!
       </h2>
 
       <div className="flex justify-between max-lg:flex-col">
         <div className="lg:w-1/2">
-          <h1 className="text-[64px] font-semibold text-primary-orange mb-10">
+          <h1 className="max-lg:text-5xl text-[64px] font-semibold text-primary-orange mb-10">
             Got a Project?
             <br />
             Lets Discuss!
@@ -139,13 +139,13 @@ const ContactForm = () => {
 
       <div className="w-full flex items-center justify-center pt-36">
         <div className=" items-center flex lg:gap-8 max-lg:gap-4  text-custom-gray">
-          <span className="leading-about text-[35px] font-semibold">
+          <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
             Youtube
           </span>
-          <span className="leading-about text-[35px] font-semibold">
+          <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
             Facebook
           </span>
-          <span className="leading-about text-[35px] font-semibold">
+          <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
             Instagram
           </span>
         </div>
