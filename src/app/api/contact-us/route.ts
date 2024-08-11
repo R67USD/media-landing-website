@@ -8,6 +8,7 @@ export const GET = (req: NextRequest, res: NextResponse) => {
 export const POST = async (req: NextRequest, res: NextResponse) => {
   const body = await req.json();
 
+  console.log(process.env.SMTP_USERNAME, process.env.SMTP_PASSWORD);
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
