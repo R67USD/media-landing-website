@@ -37,8 +37,10 @@ const HomeMainSection = () => {
                     height={24}
                   />
                 </div>
-                <div className="text-[18px] font-[500]">{item.title}</div>
-                <div className="text-[16px] leading-[30px] max-md:text-left text-center max-md:p-0 p-4">
+                <div className="text-black text-[18px] font-[500]">
+                  {item.title}
+                </div>
+                <div className="text-black text-[16px] leading-[30px] max-md:text-left text-center max-md:p-0 p-4">
                   {item.description}
                 </div>
               </div>
