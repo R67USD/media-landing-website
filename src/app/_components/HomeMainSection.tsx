@@ -14,7 +14,7 @@ const HomeMainSection = () => {
       </div>
       <div>
         <Image
-          src={"/images/home-main-transparent.png"}
+          src={"/images/home-main.svg"}
           alt="Home Main Section Image"
           width={931.5}
           height={621}

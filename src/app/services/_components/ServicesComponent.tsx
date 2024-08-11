@@ -13,7 +13,7 @@ const ServicesComponent: React.FC = () => {
               Political Campaigns
             </h2>
             <div className="flex flex-col justify-between md:flex-row items-center md:items-start gap-10 w-full">
-              <div className="max-w-4xl pt-12 text-lg leading-relaxed md:mt-0 ">
+              <div className="max-w-4xl pt-28 text-lg leading-relaxed md:mt-0 ">
                 <p className="text-2xl font-semibold leading-services tracking-tight text-text-gray">
                   Empower your political narrative with precision-targeted
                   social media strategies. We leverage data-driven insights and
