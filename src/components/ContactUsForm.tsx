@@ -81,7 +81,7 @@ const ContactForm = () => {
                   <Field
                     name="name"
                     placeholder="Your Name"
-                    className="bg-transparent focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
+                    className="bg-transparent text-black focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
                     onChange={handleChange}
                   />
                   <ErrorMessage
@@ -95,7 +95,7 @@ const ContactForm = () => {
                     name="email"
                     type="email"
                     placeholder="Your Email"
-                    className="bg-transparent focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
+                    className="bg-transparent text-black focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
                     onChange={handleChange}
                   />
                   <ErrorMessage
@@ -108,7 +108,7 @@ const ContactForm = () => {
                   <Field
                     name="phone"
                     placeholder="Phone Number"
-                    className="bg-transparent border focus:outline-none border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
+                    className="bg-transparent border text-black focus:outline-none border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
                     onChange={handleChange}
                   />
                   <ErrorMessage
@@ -121,7 +121,7 @@ const ContactForm = () => {
                   <Field
                     name="company"
                     placeholder="Company Name"
-                    className="bg-transparent focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
+                    className="bg-transparent text-black focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full"
                     onChange={handleChange}
                   />
                   <ErrorMessage
@@ -136,7 +136,7 @@ const ContactForm = () => {
                   as="textarea"
                   name="message"
                   placeholder="Message"
-                  className="bg-transparent focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full h-32"
+                  className="bg-transparent text-black focus:outline-none border border-b-2 border-black border-x-0 border-t-0 p-4 w-full h-32"
                   onChange={handleChange}
                 />
                 <ErrorMessage
