@@ -74,21 +74,15 @@ const Header = () => {
             height={16.26}
           />
         </div>
-        <h2
-          onClick={() => {
-            router.push(routesConfig.home);
-          }}
-          className="text-primary-orange text-[40px] leading-[48px]"
-        >
-          Home
-        </h2>
         <nav className="mt-4 flex flex-col gap-8 text-white text-sm">
-          {NavLinks.slice(1).map((link) => {
+          {NavLinks.map((link) => {
             return (
               <Link href={link.path} key={link.name}>
                 <span
                   className={`relative text-lg ${
-                    activeLink === link.path ? "active" : ""
+                    activeLink === link.path
+                      ? "active-mobile text-primary-orange !text-[40px] leading-[48px]"
+                      : ""
                   }`}
                   onClick={() => {
                     setActiveLink(link.path);

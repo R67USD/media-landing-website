@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className="container py-2 w-full">
+    <footer className="container py-2 w-full font-sans">
       <div className="mx-auto flex justify-between items-center">
         <span className="max-sm:hidden">
           <Link href={routesConfig.home}>
@@ -31,11 +31,9 @@ const Footer = () => {
           </Link>
         </span>
         <nav className="max-lg:hidden flex gap-10 text-orange-600">
-          <a href="#">{t("footer.about")}</a>
-          <a href="#"> {t("footer.features")} </a>
-          <a href="#"> {t("footer.pricing")} </a>
-          <a href="#"> {t("footer.gallery")} </a>
-          <a href="#"> {t("footer.team")} </a>
+          <Link href={routesConfig.home}>{t("footer.home")}</Link>
+          <Link href={routesConfig.aboutUs}>{t("footer.about")}</Link>
+          <Link href={routesConfig.services}>{t("footer.services")}</Link>
         </nav>
         <p className="text-purple-800 max-sm:text-sm text-2xl">
           {t("footer.letsDoIt")}

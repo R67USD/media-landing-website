@@ -1,10 +1,11 @@
 /* src/components/ServicesComponent.tsx */
+import BottomLinks from "@/components/BottomLinks";
 import Image from "next/image";
 import React from "react";
 
 const ServicesComponent: React.FC = () => {
   return (
-    <div className=" w-full">
+    <div className="w-full font-sans">
       <div className="mx-auto">
         <div className="flex flex-col items-start justify-center my-10">
           <div className="container">
@@ -114,19 +115,7 @@ const ServicesComponent: React.FC = () => {
 
           <hr className="w-full border-gray-600 mt-8 mb-16 my-24" />
 
-          <div className="w-full flex items-center justify-center py-24">
-            <div className=" items-center flex gap-8 text-custom-gray">
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Youtube
-              </span>
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Facebook
-              </span>
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Instagram
-              </span>
-            </div>
-          </div>
+          <BottomLinks />
         </div>
       </div>
     </div>

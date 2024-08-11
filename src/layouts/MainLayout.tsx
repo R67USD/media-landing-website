@@ -1,11 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
-import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MainLayout = ({ children }) => {
   return (
     <>
+      <ToastContainer autoClose={3000} theme="light" position="top-center" />
       <Image
         src={"/images/main-gradient.svg"}
         alt="Home Main Section Image"

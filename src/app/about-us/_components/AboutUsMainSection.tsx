@@ -1,6 +1,9 @@
 /* src/components/AboutUsMainSection.tsx */
+import BottomLinks from "@/components/BottomLinks";
+import { config } from "@/utils/config";
 import { t } from "@/utils/translation";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AboutUsMainSection: React.FC = () => {
@@ -28,19 +31,7 @@ const AboutUsMainSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full flex items-center justify-center py-24">
-            <div className=" items-center flex gap-8 text-custom-gray">
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Youtube
-              </span>
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Facebook
-              </span>
-              <span className="leading-about max-lg:text-xl text-[35px] font-semibold">
-                Instagram
-              </span>
-            </div>
-          </div>
+          <BottomLinks />
         </div>
       </div>
     </div>

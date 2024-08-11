@@ -24,8 +24,8 @@ const translation = {
   },
   footer: {
     about: "About",
-    features: "Features",
-    pricing: "Pricing",
+    home: "Home",
+    services: "Services",
     gallery: "Gallery",
     team: "Team",
     letsDoIt: "Let's do it! —",
@@ -40,6 +40,30 @@ const translation = {
   services: {
     title: "Services",
     description: "",
+  },
+  home: {
+    main: {
+      title: "Building Connections, One Click at a Time.",
+      description:
+        "Join the Community of Engaged Audiences. Share, Like, and Grow with Our Innovative Social Media Strategies",
+      info: {
+        1: {
+          title: "Targeted Advertising",
+          description:
+            "Reach your ideal audience with precision. Tailor ads to specific demographics, interests, and behaviors for maximum impact",
+        },
+        2: {
+          title: "Engagement Strategies",
+          description:
+            "Boost interaction with your brand. Implement tactics that encourage likes, shares, and comments to grow your online community.",
+        },
+        3: {
+          title: "Performance Analytics",
+          description:
+            "Measure your success with detailed analytics. Track key metrics to optimize campaigns and achieve your social media goals.",
+        },
+      },
+    },
   },
 };
 

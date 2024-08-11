@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         "purple-primary": "#5420A4",
         "primary-orange": "#FF4900",
+        "primary-red": "#EF6161",
+        "primary-blue": "#6A94FF",
+        "primary-pink": "#E149E4",
         "custom-gray": "#BBBBBB",
         "text-gray": "#6D6868",
         "custom-overlay": "rgba(84, 32, 164, 0.59)",
@@ -28,6 +31,10 @@ const config: Config = {
       container: {
         center: true,
         padding: "15px",
+      },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        // You can also add other font families here
       },
     },
   },
