@@ -30,21 +30,27 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (values: any, { resetForm }: any) => {
-    setLoading(true);
-    const response = await fetch("/api/contact-us", {
-      body: JSON.stringify(values),
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((res) => res.json());
-    setLoading(false);
+    try {
+      setLoading(true);
+      const response = await fetch("/api/contact-us", {
+        body: JSON.stringify(values),
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => res.json());
+      setLoading(false);
 
-    if (response?.data?.mailId) {
-      toast.success("Email sent successfully");
-      resetForm();
-    } else {
-      toast.error("Something went wrong!");
+      if (response?.data?.mailId) {
+        toast.success("Email sent successfully");
+        resetForm();
+      } else {
+        toast.error("Something went wrong!");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
