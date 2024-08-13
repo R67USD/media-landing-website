@@ -35,12 +35,12 @@ const Footer = () => {
           <Link href={routesConfig.aboutUs}>{t("footer.about")}</Link>
           <Link href={routesConfig.services}>{t("footer.services")}</Link>
         </nav>
-        <p className="text-purple-800 max-sm:text-sm text-2xl">
+        <p className="max-md:hidden text-purple-800 max-sm:text-sm text-2xl">
           {t("footer.letsDoIt")}
         </p>
         <button
           onClick={() => router.push(routesConfig.contactUs)}
-          className="bg-orange-600 text-white max-sm:py-1 max-sm:px-4 py-2 px-6 rounded-md"
+          className="font-sans max-sm:text-[12.54px] bg-orange-600 text-white max-sm:mr-8 max-sm:w-[125px] max-sm:h-[39px] max-sm:py-1 max-sm:px-4 py-2 px-6 rounded-md"
         >
           {t("nav.contact")}
         </button>

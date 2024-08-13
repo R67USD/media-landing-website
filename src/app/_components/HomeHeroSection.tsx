@@ -5,10 +5,10 @@ const HomeHeroSection = () => {
   return (
     <div className="flex justify-between max-md:flex-col container">
       <div className="lg:w-1/2 flex flex-col max-sm:text-center gap-4 max-md:mt-12 mt-48 ">
-        <div className="max-md:text-[24px] text-[40px] font-semibold text-purple-primary leading-hero">
+        <div className="max-sm:leading-2 max-md:text-[24px] text-[40px] font-semibold text-purple-primary leading-hero">
           Transforming Digital Campaigns with Creative Excellence.
         </div>
-        <div className="max-md:text-[24px] text-[40px] font-semibold text-primary-orange leading-hero">
+        <div className="max-sm:text-[35px] max-sm:truncate  text-[40px] font-semibold text-primary-orange leading-hero">
           Engage, Influence, and Inspire with our Customized Political Campaigns
           and Brand Content Strategies”
         </div>

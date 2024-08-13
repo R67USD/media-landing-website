@@ -5,8 +5,8 @@ import React from "react";
 const BottomLinks = () => {
   return (
     <>
-      <div className="w-full flex items-center justify-center py-24">
-        <div className=" items-center flex gap-8 text-custom-gray">
+      <div className="w-full flex items-center justify-center max-sm:py-8 py-24">
+        <div className=" items-center flex max-sm:gap-4 gap-8 text-custom-gray">
           <Link
             href={config.links.youtube}
             className="leading-about max-lg:text-xl hover:text-primary-red text-[35px] font-semibold"

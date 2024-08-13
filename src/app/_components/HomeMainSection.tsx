@@ -6,15 +6,15 @@ import React from "react";
 const HomeMainSection = () => {
   return (
     <div className="container flex flex-col items-center justify-center mt-28 bg-transparent">
-      <h4 className="text-base font-semibold text-purple-primary">
+      <h4 className="text-[14px] tracking-[.425rem] text-center font-semibold text-purple-primary">
         {t("home.main.title")}
       </h4>
-      <div className="max-md:text-[24px] text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center">
+      <div className="max-sm:text-[24px] text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center">
         {t("home.main.description")}
       </div>
       <div>
         <Image
-          src={"/images/home-main.svg"}
+          src={"/images/white-banner.svg"}
           alt="Home Main Section Image"
           width={931.5}
           height={621}
@@ -22,12 +22,12 @@ const HomeMainSection = () => {
       </div>
 
       <div className="pt-20">
-        <div className="md:grid grid-cols-3 md:grid-rows-3 max-md:space-y-4">
+        <div className="max-sm:px-4 md:grid grid-cols-3 md:grid-rows-3 max-md:space-y-4">
           {HomeMainInfoCards.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col max-md:items-start items-center justify-center"
+                className="flex flex-col max-sm:gap-2 max-sm:items-start items-center justify-center"
               >
                 <div>
                   <Image

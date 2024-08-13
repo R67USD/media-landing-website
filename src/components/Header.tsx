@@ -59,7 +59,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden fixed px-12 flex flex-col w-full inset-0 top-0  md:w-full h-full md:max-h-[748px] z-[5]  ${
+        className={`sm:hidden fixed rounded-l-2xl px-12 flex flex-col w-[90%] right-0 inset-0 top-0 left-12 sm:w-[90%] h-full md:max-h-[748px] z-[5]  ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         } transition ease-in-out duration-300 bg-custom-overlay backdrop-filter backdrop-blur-md`}
       >

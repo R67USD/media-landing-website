@@ -27,7 +27,7 @@ const MainLayout = ({ children }) => {
       <div className="min-h-screen h-full">
         <Header />
         {children}
-        <hr className="w-full border-gray-600 mt-8 mb-8 my-24" />
+        <hr className="w-full border-gray-600 mt-8 mb-2 " />
         <Footer />
       </div>
     </>

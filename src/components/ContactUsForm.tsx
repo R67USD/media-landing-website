@@ -55,8 +55,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto py-20">
-      <h2 className="max-lg:text-3xl text-[64.08px] text-center font-semibold text-primary-orange  leading-[50px] mb-16">
+    <div className="container mx-auto pt-20">
+      <h2 className="max-sm:text-[25px] w-[90%] mx-auto max-sm:font-semibold max-lg:text-3xl text-[64.08px] text-center font-semibold text-primary-orange  leading-[75px] max-sm:mb-8 mb-16">
         Looking to Boost Your Social Media Presence? Let's Connect!
       </h2>
 
