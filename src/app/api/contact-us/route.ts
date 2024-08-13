@@ -23,8 +23,8 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
   });
 
   const mail = await transporter.sendMail({
-    from: process.env.SMTP_USERNAME,
-    to: body.email,
+    from: body.email,
+    to: process.env.SMTP_USERNAME,
     subject: "Media Solutions Pvt, Ltd. - Contact Us",
     html: `
       <h2>Contact Information</h2>
