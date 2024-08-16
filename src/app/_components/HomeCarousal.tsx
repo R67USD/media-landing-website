@@ -11,7 +11,7 @@ import { Navigation } from "swiper/modules";
 
 const HomeCarousal = () => {
   return (
-    <div className="container max-md:hidden">
+    <div className="container max-md:hidden text-black">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <div className="items-center text-center flex justify-center flex-col px-[210px]">

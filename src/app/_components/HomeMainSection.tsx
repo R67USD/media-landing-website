@@ -5,12 +5,26 @@ import React from "react";
 
 const HomeMainSection = () => {
   return (
-    <div className="container flex flex-col items-center justify-center mt-28 bg-transparent">
+    <div className="container flex flex-col items-center justify-center max-sm:mt-12 mt-28 bg-transparent">
       <h4 className="text-[14px] tracking-[.425rem] text-center font-semibold text-purple-primary">
         {t("home.main.title")}
       </h4>
-      <div className="max-sm:text-[24px] text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center">
+      <div className="max-sm:hidden max-sm:text-[24px] text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center">
         {t("home.main.description")}
+      </div>
+      <div
+        style={{
+          fontSize: "1.2rem",
+          fontStyle: "normal",
+          fontWeight: 600,
+          lineHeight: "normal",
+          letterSpacing: "-0.06rem",
+        }}
+        className="text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center"
+      >
+        <div className="">Share, Like, and Grow with</div>
+        <div className="">Our Innovative Social Media</div>
+        <div className="">Strategies</div>
       </div>
       <div>
         <Image
@@ -37,10 +51,10 @@ const HomeMainSection = () => {
                     height={24}
                   />
                 </div>
-                <div className="text-black text-[18px] font-[500]">
+                <div className="max-sm:font-bold text-black text-[18px] font-[500]">
                   {item.title}
                 </div>
-                <div className="text-black text-[16px] leading-[30px] max-md:text-left text-center max-md:p-0 p-4">
+                <div className="text-black text-[16px] max-sm:leading-[26px] leading-[30px] max-md:text-left text-center max-md:p-0 p-4">
                   {item.description}
                 </div>
               </div>

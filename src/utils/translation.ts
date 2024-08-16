@@ -46,6 +46,8 @@ const translation = {
       title: "Building Connections, One Click at a Time.",
       description:
         "Join the Community of Engaged Audiences. Share, Like, and Grow with Our Innovative Social Media Strategies",
+      mobile_description:
+        "Share, Like, and Grow with Our Innovative Social Media Strategies",
       info: {
         1: {
           title: "Targeted Advertising",

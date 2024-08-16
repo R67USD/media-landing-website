@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <main>
       <HomeHeroSection />
-      <hr className="w-full border-gray-600 mt-8 mb-8 !my-40" />
+      <hr className="w-full border-gray-600 !my-12" />
       <HomeMainSection />
       <HomeCarousal />
       <div className="max-sm:block hidden">
