@@ -20,7 +20,7 @@ const HomeMainSection = () => {
           lineHeight: "normal",
           letterSpacing: "-0.06rem",
         }}
-        className="text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center"
+        className="sm:hidden text-[38px] font-[500] text-primary-orange mt-12 w-[80%] text-center"
       >
         <div className="">Share, Like, and Grow with</div>
         <div className="">Our Innovative Social Media</div>
