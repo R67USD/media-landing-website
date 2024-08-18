@@ -14,9 +14,10 @@ const HomeHeroSection = () => {
         </div>
         <div className="sm:hidden text-left max-sm:text-[35px] truncate text-[40px] font-semibold text-primary-orange leading-hero">
           <div className="font-semibold text-primary-orange leading-hero">
-            Political Campaigns,
+            Social Media
           </div>
-          <div>Brand Content ...</div>
+          <div>Marketing, Brand</div>
+          <div>Growth</div>
         </div>
       </div>
       <div className="md:hidden max-md:flex max-md:gap-4 max-md:mt-10">
