@@ -45,7 +45,8 @@ const ContactForm = () => {
         toast.success("Email sent successfully");
         resetForm();
       } else {
-        toast.error("Something went wrong!");
+        console.log(response, "response");
+        toast.error(response?.data?.error?.response || "Something went wrong!");
       }
     } catch (error) {
       console.log(error);
